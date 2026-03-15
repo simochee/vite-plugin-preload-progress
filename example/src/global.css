@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  color: #1f2937;
+  background: linear-gradient(135deg, #eef2ff, #fff);
+  min-height: 100vh;
+}
+
+code {
+  font-family: ui-monospace, monospace;
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.875em;
+  color: #4f46e5;
+}

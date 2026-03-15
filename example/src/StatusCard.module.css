@@ -1,0 +1,47 @@
+.card {
+  background: #fff;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.body {
+  margin-top: 8px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.green {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.blue {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.purple {
+  background: #f3e8ff;
+  color: #7e22ce;
+}

@@ -1,0 +1,103 @@
+.header {
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 16px 24px;
+}
+
+.headerInner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+}
+
+.card + .card {
+  margin-top: 32px;
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.cardBody {
+  margin-top: 8px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badgeGreen {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badgeBlue {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badgePurple {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+
+.button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.button:hover {
+  background: #4338ca;
+}
+
+.fallback {
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
