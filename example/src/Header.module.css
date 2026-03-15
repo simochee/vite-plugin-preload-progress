@@ -1,0 +1,22 @@
+.header {
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  padding: 16px 24px;
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}

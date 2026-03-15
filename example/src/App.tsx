@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState } from "react";
 import styles from "./App.module.css";
 
+const Header = lazy(() => import("./Header"));
 const StatusCard = lazy(() => import("./StatusCard"));
 const DynamicCard = lazy(() => import("./DynamicCard"));
 
@@ -9,12 +10,9 @@ export function App() {
 
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.headerInner}>
-          <h1 className={styles.title}>vite-plugin-preload-progress</h1>
-          <p className={styles.subtitle}>Example app with React + CSS Modules</p>
-        </div>
-      </header>
+      <Suspense>
+        <Header />
+      </Suspense>
 
       <main className={styles.main}>
         <Suspense fallback={<p className={styles.fallback}>Loading...</p>}>
