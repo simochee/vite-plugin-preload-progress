@@ -11,4 +11,13 @@ export default defineConfig({
       exitClass: "fade-out",
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          "react-vendor": ["react", "react-dom"],
+        },
+      },
+    },
+  },
 });

@@ -1,8 +1,8 @@
 import { lazy, Suspense, useState } from "react";
 import styles from "./App.module.css";
+import Header from "./Header";
+import StatusCard from "./StatusCard";
 
-const Header = lazy(() => import("./Header"));
-const StatusCard = lazy(() => import("./StatusCard"));
 const DynamicCard = lazy(() => import("./DynamicCard"));
 
 export function App() {
@@ -10,14 +10,10 @@ export function App() {
 
   return (
     <>
-      <Suspense>
-        <Header />
-      </Suspense>
+      <Header />
 
       <main className={styles.main}>
-        <Suspense fallback={<p className={styles.fallback}>Loading...</p>}>
-          <StatusCard />
-        </Suspense>
+        <StatusCard />
 
         <section className={styles.card}>
           <h2 className={styles.cardTitle}>Dynamic Import Test</h2>
