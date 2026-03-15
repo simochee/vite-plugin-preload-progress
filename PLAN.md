@@ -51,11 +51,11 @@ Viteの `generateBundle` フックを使う。このフック内では `OutputBu
 
 ```typescript
 interface PreloadProgressOptions {
-  loader?: string      // カスタムローダーHTML。id="progress-bar" と id="progress-pct" の規約で進捗が反映される
-  loaderId?: string    // ローダーのラッパーid。デフォルト 'preload-progress-loader'
-  delay?: number       // 完了→エントリ実行の待機ms。フェードアウトアニメーション用。デフォルト 0
-  exitClass?: string   // 完了時にローダーに付与するCSSクラス名
-  includeDynamic?: boolean  // dynamicImportsも初期ロード対象に含めるか。デフォルト false
+  loader?: string; // カスタムローダーHTML。id="progress-bar" と id="progress-pct" の規約で進捗が反映される
+  loaderId?: string; // ローダーのラッパーid。デフォルト 'preload-progress-loader'
+  delay?: number; // 完了→エントリ実行の待機ms。フェードアウトアニメーション用。デフォルト 0
+  exitClass?: string; // 完了時にローダーに付与するCSSクラス名
+  includeDynamic?: boolean; // dynamicImportsも初期ロード対象に含めるか。デフォルト false
 }
 ```
 

@@ -1,0 +1,11 @@
+{
+  "plugins": ["typescript"],
+  "rules": {
+    "typescript/consistent-type-definitions": ["error", "interface"],
+    "typescript/consistent-type-imports": "error",
+    "import/no-default-export": "error",
+    "typescript/array-type": ["error", { "default": "array-simple" }],
+    "typescript/consistent-indexed-object-style": ["error", "record"],
+    "typescript/no-floating-promises": "error"
+  }
+}
